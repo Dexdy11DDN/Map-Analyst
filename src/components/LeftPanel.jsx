@@ -160,12 +160,12 @@ function LeftPanel() {
                   {StrinovaMaps.map((map) => (
                     <button
                       key={map.id}
-                      onClick={() => handleMapSelect(map.blankImage, map.name)}
+                      onClick={() => handleMapSelect(map.prepareImage, map.name)}
                       className="group relative aspect-video bg-dark-300 rounded-lg overflow-hidden hover:ring-2 ring-accent-primary transition-all"
                       title={map.name}
                     >
                       <img
-                        src={map.blankImage}
+                        src={map.prepareImage}
                         alt={map.name}
                         className="w-full h-full object-cover"
                         loading="lazy"
